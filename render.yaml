@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: yuanlai-mcp-server
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python yuanlai_mcp_server_knot.py 8080
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
