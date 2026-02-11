@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python yuanlai_mcp_server_knot.py 8080"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
