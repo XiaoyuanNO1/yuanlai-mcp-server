@@ -165,12 +165,12 @@ class MCPRequestHandler(BaseHTTPRequestHandler):
         # 保存会话信息
         mcp_sessions[session_id] = {
             "created_at": datetime.now().isoformat(),
-            "protocol_version": params.get('protocolVersion', '1.0'),
+            "protocol_version": params.get('protocolVersion', '2024-11-05'),
             "client_info": params.get('clientInfo', {})
         }
         
         return {
-            "protocolVersion": "1.0",
+            "protocolVersion": "2024-11-05",
             "serverInfo": {
                 "name": "yuanlai-company-agent",
                 "version": "1.0.0"
