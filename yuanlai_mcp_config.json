@@ -1,0 +1,35 @@
+{
+  "name": "yuanlai-company-agent",
+  "version": "1.0.0",
+  "description": "元来如此公司 Agent 集群 MCP Server - 提供财务、人力资源、研发助手的统一调用接口",
+  "main": "yuanlai_mcp_server.py",
+  "type": "stdio",
+  "python": {
+    "command": "python3",
+    "args": ["yuanlai_mcp_server.py"]
+  },
+  "dependencies": {
+    "requests": ">=2.31.0",
+    "mcp": ">=0.1.0"
+  },
+  "tools": [
+    {
+      "name": "query_finance",
+      "description": "查询公司财务数据，包括营业收入、利润、负债、现金流等财务指标"
+    },
+    {
+      "name": "query_hr",
+      "description": "查询人力资源数据，包括员工信息、职级、薪资、入职时间等"
+    },
+    {
+      "name": "query_rd",
+      "description": "查询研发项目数据，包括项目进度、团队规模、技术栈等"
+    },
+    {
+      "name": "query_company",
+      "description": "智能查询公司信息，自动识别问题类型并调用相应的子 Agent。支持跨领域的综合查询。"
+    }
+  ],
+  "author": "Neil",
+  "license": "MIT"
+}

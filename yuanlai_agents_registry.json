@@ -1,0 +1,154 @@
+{
+  "company_name": "元来如此",
+  "company_description": "元来如此是一家综合性企业，拥有完善的财务、人力资源和研发管理系统",
+  "sub_agents": [
+    {
+      "agent_id": "finance_agent",
+      "agent_name": "元来如此财务助手",
+      "app_id": "2021471784476941568",
+      "app_key": "UeqYdhsBgREPsPqOcXImvHoIjnOzKtaxhYichSIbNPPCLpFLjiafaBFuDYpqArqcdKdCYBtAjJkqKyotbtamdfabIwKRcsnHRVVcPLLVzeVxpFttoaDpAfUNDCnevQlD",
+      "platform": "ADP",
+      "description": "元来如此公司的财务助手，专门负责提供公司财务数据查询和分析服务",
+      "capabilities": [
+        "查询公司营业收入",
+        "查询公司利润情况",
+        "查询公司现金流",
+        "查询公司债务状况",
+        "提供财务数据分析",
+        "介绍各项财务指标"
+      ],
+      "limitations": [
+        "仅限元来如此公司内部财务数据",
+        "不能提供其他公司的财务信息",
+        "不能修改财务数据"
+      ],
+      "keywords": [
+        "财务",
+        "收入",
+        "利润",
+        "现金流",
+        "债务",
+        "财务报表",
+        "营业额",
+        "成本",
+        "资产",
+        "负债",
+        "财报",
+        "经营",
+        "盈利"
+      ],
+      "example_queries": [
+        "公司今年的营业收入是多少？",
+        "公司的利润情况如何？",
+        "公司的现金流怎么样？",
+        "公司有多少债务？",
+        "公司的资产负债情况如何？"
+      ],
+      "status": "active"
+    },
+    {
+      "agent_id": "hr_agent",
+      "agent_name": "元来如此人力资源助手",
+      "app_id": "2021473898343609472",
+      "app_key": "udeWyBcohDQebXFpbUlhDnhQWoHbtOZWOCuLVInbzVEPyJWUtBkHAvaXwPLzDciTrjyFIdKeepDGvPlWNpmDuxDILeZygBPZjjJtJFzwyXEJyyBjbZzwrGqOCqZdUvuZ",
+      "platform": "ADP",
+      "description": "元来如此公司的人力资源助手，专门负责解答与公司人力资源相关的问题",
+      "capabilities": [
+        "查询公司各部门人员分布情况",
+        "查询管理人员基本信息（职位、职级、入职时间等）",
+        "提供员工数量统计",
+        "介绍部门组织架构",
+        "解答人事相关问题"
+      ],
+      "limitations": [
+        "仅限元来如此公司内部人事数据",
+        "不能提供员工隐私信息",
+        "不能修改人事数据"
+      ],
+      "keywords": [
+        "人力资源",
+        "人事",
+        "员工",
+        "部门",
+        "组织架构",
+        "职位",
+        "职级",
+        "入职",
+        "人员",
+        "HR",
+        "团队",
+        "招聘",
+        "管理层"
+      ],
+      "example_queries": [
+        "公司有多少员工？",
+        "各部门的人员分布情况如何？",
+        "某个部门有哪些管理人员？",
+        "公司的组织架构是怎样的？",
+        "技术部有多少人？"
+      ],
+      "status": "active"
+    },
+    {
+      "agent_id": "rd_agent",
+      "agent_name": "元来如此研发助手",
+      "app_id": "2021479982806512768",
+      "app_key": "ofQEVhJwESeFpsjKtWZybrSOpHMSsMoBymRlDllhuNswHNKXlEOyhRAIQVQujpVnSINfNJExAWaUtuoEiCzaNsZRYKGqbkCXLtXdHtRepmCcogrfVmxPGkNUieOyeCML",
+      "platform": "ADP",
+      "description": "元来如此公司的研发助手，负责协助研发部门处理各类技术和管理问题",
+      "capabilities": [
+        "查询项目进度",
+        "查询技术资产",
+        "查询团队技能分布",
+        "解答研发相关问题",
+        "提供技术栈信息",
+        "介绍开发流程"
+      ],
+      "limitations": [
+        "仅限元来如此公司内部研发数据",
+        "不能提供其他公司的技术信息",
+        "不能修改研发数据"
+      ],
+      "keywords": [
+        "研发",
+        "开发",
+        "项目",
+        "技术",
+        "代码",
+        "进度",
+        "技能",
+        "团队",
+        "系统",
+        "产品",
+        "功能",
+        "需求",
+        "bug",
+        "测试",
+        "上线",
+        "发布"
+      ],
+      "example_queries": [
+        "当前有哪些项目在进行？",
+        "项目的进度如何？",
+        "技术团队有哪些技能？",
+        "公司使用什么技术栈？",
+        "研发流程是怎样的？"
+      ],
+      "status": "active"
+    }
+  ],
+  "api_config": {
+    "endpoint": "https://wss.lke.tencentcloud.com/v1/qbot/chat/sse",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "timeout": 60
+  },
+  "metadata": {
+    "created_at": "2026-02-11T15:01:47Z",
+    "updated_at": "2026-02-11T15:11:04Z",
+    "version": "1.1.0",
+    "total_agents": 3
+  }
+}
